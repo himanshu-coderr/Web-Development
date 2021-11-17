@@ -1,0 +1,67 @@
+need empty packet of json, cmd => npm init
+npm i express
+
+const express = require('express') is okay to write but better is
+import express from 'express'; and go to package.json write "type": "module"
+
+can't run nodejs by => node index.js so write in package.json file 
+"start":"node index.js"
+
+server starts and stops again, install
+npm install -g nodemon
+
+npm start 
+
+----------------------
+MONGO DB
+
+go to cloud.mongodb
+create new project -> name is MERN Blog -> create cluster -> free 
+select amazon aws => virginia -> cluster Name is BlogWeb -> then create it
+go to Database Access option -> Add new database User -> set id password 
+id - himanshu, pass - himanshu1212  -> add user
+
+select Network Access -> Add IP address -> Add current IP Address -> done
+It will active when cluster is created
+
+go to Databases -> connect -> connect your application
+select node version and copy below text 
+
+create database folder -> create db.js
+npm i mongoose
+using mongoose we connect it to mongodb
+
+url is to connect with mongodb
+url = mongodb+srv://himanshu:<password>@blogweb.6bzrl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+replace <password> with himanshu1212  
+replace 'myFirstDatabase' with MERN BLOG
+useNewUrlParser:true means  url is deprecated so use new url
+useUnifiedTopology: true means we're telling mongodb that current server and monitoring engine is deprecated.
+
+
+------------------------------
+Backend work
+
+Client Folder
+In CreateView.jsx,create onChange functions in textfields,name,savepost function in publish button
+create the handleChange function so it can update in setPost useState function.
+savepost function will pass post data in createpost func.  
+create service folder inside of it create api.js. here we'll create client side api.
+the api will return some response and checks in the backend for correct data.
+
+Server Folder 
+create schema folder, inside of it create post-schema.js, mention all input fields i.e PostSchema and use mongoose func to insert
+two arguments - 1st is 'post'or'Post' which is database name and 2nd is PostSchema. put it in a const and export it
+create routes folder, inside of it create route.js, import express and use Router.
+create postapi and mention a function 'createPost' and define it in post-controller.js file which is inside of post-controller folder(create these two also)
+create createPost func and pass the request.body in Post function and use Save(); to save data in mongoose.
+
+call from frontend api then it checks with backend api.🤷‍♀️
+npm i axios
+npm i cors
+npm i body-parser
+
+-----------------------------
+
+
+
