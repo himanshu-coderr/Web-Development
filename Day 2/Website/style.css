@@ -1,0 +1,163 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.header-list{
+    margin: 0;
+    background-color: orangered;
+    list-style-type: none;
+    padding: 10px;
+    
+}
+.list{
+    display: inline;
+    margin: 40px;
+}
+.button{
+    text-decoration: none;
+    color: rgb(185, 175, 175);
+    padding: 15px;
+
+}
+.list a{
+    font-style: bold;
+}
+.button:hover{
+    background-color: thistle;
+    padding: 15px;
+    color: orangered;
+}
+
+.landing-image{
+    background-image: url('./Images/pizza4.jpg');
+    position: relative;
+    width: 100%;
+    height: 800px;
+    /* opacity: 0.9; */
+}
+.heading{
+    color: rgb(22, 22, 21);
+    position: absolute;
+    margin: 110px 0px 0px 130px;
+    font-size: 100px;
+}
+
+img{
+    width: 95%;
+    padding: 10px;
+    object-fit: cover;
+}
+h1,h3{
+    text-align: center;
+}
+.btn{
+    padding: 12px;
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(238, 199, 185);
+    border-radius: 5px;
+}
+.flex-div{
+    border: 1px solid black;
+    padding: 12px;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+footer{
+    background-color: black;
+    padding-bottom: 20px;
+}
+ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 10px;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.foot{
+    text-decoration: none;
+    color: white;
+}
+.foot:hover{
+    border-bottom: white 1px solid;
+}
+li{
+    margin: 10px;
+
+}
+@media only screen and (max-width: 800px) {
+    ul{
+        margin: 0;
+        background-color: black;
+        list-style-type: none;
+        padding: 3px;
+        
+    }
+    .list{
+        display: inline;
+        margin: 10px;
+    }
+    .button{
+        text-decoration: none;
+        color: white;
+        background-color: black;
+    
+    }
+    textarea{
+        width: 400px;
+    }
+  }
+
+
+  /* form submiting */
+
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    padding: 16px;
+    background-color: white;
+  }
+  
+  input[type=text]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus{
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  .submitbtn {
+    background-color: orangered;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .submitbtn:hover {
+    opacity: 1;
+  }
+  
+  
