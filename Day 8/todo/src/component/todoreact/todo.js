@@ -12,8 +12,8 @@ import "./style.css"
     }
 const Todo = () => {
 
-    const [inputdata, setInputData] = useState("")
-    const [items, setItems] = useState(getLocalData());
+    const [inputdata, setInputData] = useState("")                   // contains input field data
+    const [items, setItems] = useState(getLocalData());             // array contains the todo list data
     const [isEditItem, setIsEditItem] = useState("");
     const [toggleButton, setToggleButton] = useState(false);
 
